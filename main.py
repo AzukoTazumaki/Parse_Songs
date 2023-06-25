@@ -4,9 +4,13 @@ import requests
 
 
 def parse_site(name: str):
-    url = 'https://lyrsense.com'
-    response = bs(requests.get(url + f'/search?s={name}&search=').content, 'html.parser')
-    link = response.find('div', {'class': 'linkDiv'})['href']
+    url: str = 'https://lyrsense.com'
+    search: str = f'/search?s={name}&search='
+    artist_link = bs(requests.get(url + search).content, 'html.parser').find('div', {'class': 'linkDiv'})['href']
+    albums = [
+        x.text for x in bs(requests.get(url + artist_link).content, 'html.parser')
+        .find_all('strong', {'class': 'albumTitle'})
+    ]
     pass
 
 
