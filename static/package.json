@@ -1,0 +1,22 @@
+{
+  "name": "static",
+  "version": "1.0.0",
+  "description": "Tuples, sets, dictionaries. Part II.",
+  "main": "static/js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tuples",
+    "sets",
+    "dictionaries"
+  ],
+  "author": "Azuko",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.0-alpha3",
+    "inputmask": "^5.0.8",
+    "jquery": "^3.7.0",
+    "malihu-custom-scrollbar-plugin": "^3.1.5"
+  }
+}

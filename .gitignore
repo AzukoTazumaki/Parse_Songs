@@ -1,3 +1,4 @@
 .idea
 __pycache_
 .DS_Store
+static/node_modules

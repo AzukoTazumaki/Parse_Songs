@@ -1,0 +1,31 @@
+{% block header %}
+<!-- ———————————————————————————— HEADER ———————————————————————————— -->
+<header>
+
+    <!-- ———————————————————————————— NAVBAR ———————————————————————————— -->
+    <nav class="navbar navbar-expand fixed-top px-3 py-0">
+
+        <!-- ———————————————————————————— NAVBAR CONTAINER ———————————————————————————— -->
+        <div class="container nav_container">
+
+            <!-- ———————————————————————————— LOGO ———————————————————————————— -->
+            <a href="/" class="navbar-brand">
+                <img src="{{url_for('static', filename='images/logo.svg')}}" width="150" alt="AZUKO">
+            </a>
+
+            <!-- ———————————————————————————— LINKS ———————————————————————————— -->
+            <div>
+
+                <!-- ———————————————————————————— GITHUB ———————————————————————————— -->
+                <a id="github_link" href="https://github.com/AzukoTazumaki">
+                    <i class="fa-brands fa-github fa-xl"></i>&#32;Github
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+    
+</header>
+{% endblock %}

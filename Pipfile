@@ -9,6 +9,7 @@ bs4 = "*"
 requests = "*"
 urllib3 = "*"
 certifi = "*"
+flask = "*"
 
 [dev-packages]
 
