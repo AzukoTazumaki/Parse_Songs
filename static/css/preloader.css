@@ -12,7 +12,7 @@
     top: 0;
     width: 51%;
     height: 100%;
-    background: var(--palegoldenrod);
+    background: var(--rose-rgb);
     z-index: 1000;
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -36,7 +36,7 @@
     margin: -75px 0 0 -75px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: var(--marsh);
+    border-top-color: var(--white-rgb);
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
     z-index: 99999;
@@ -51,7 +51,7 @@
     bottom: 5px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: var(--marsh);
+    border-top-color: var(--white-rgb);
     -webkit-animation: spin 3s linear infinite;
     animation: spin 3s linear infinite;
 }
@@ -65,7 +65,7 @@
     bottom: 15px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: var(--marsh);
+    border-top-color: var(--white-rgb);
     -webkit-animation: spin 1.5s linear infinite;
     animation: spin 1.5s linear infinite;
 }

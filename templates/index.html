@@ -11,17 +11,24 @@
     <link rel="shortcut icon" href="{{url_for('static', filename='favicon.ico')}}" type="image/x-icon">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-smooth-scroll="true">
+
+    <video autoplay muted loop src="{{url_for('static', filename='video/bg.mp4')}}"></video>
 
     {% block preloader %}
     {% include 'preloader.html' %}
     {% endblock %}
 
     {% block header %}
-    {% include 'header.html'   %}
+    {% include 'header.html' %}
     {% endblock %}
 
     {% block welcome %}
+    {% include 'welcome.html' %}
+    {% endblock %}
+
+    {% block search %}
+    {% include 'search.html' %}
     {% endblock %}
 
     <!-- ——SCRIPTS—— -->

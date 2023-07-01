@@ -1,19 +1,20 @@
-{% extends 'index.html' %}
-
 {% block welcome %}
 <!-- ———————————————————————————— CONTAINER ———————————————————————————— -->
-<div class="container-fluid welcome_container" >
+<div id="welcome_container" class="container-fluid welcome_container" >
     <div class="row d-flex align-items-center vh-100">
 
         <!-- ———————————————————————————— WELCOME BLOCK ———————————————————————————— -->
-        <div class="offset-2 col-6">
+        <div class="offset-2 col-8">
             <div class="welcome">
-                <h3 class="text_welcome"><span class="span_text_welcome">Приветствуем <i class="fa-solid fa-hand-holding-heart"></i></span></h3>
+                <h3 class="text_welcome d-flex justify-content-center"><span class="span_text_welcome">Приветствуем <i class="fa-solid fa-hand-holding-heart"></i></span></h3>
                 <hr>
-                <h5 class="text_welcome_description"><span class="span_text_welcome_description">Найди перевод песни в два клика!</span></h5>
+                <h5 class="text_welcome_description d-flex justify-content-center"><span class="span_text_welcome_description">Найди перевод песни в два клика!</span></h5>
             </div>
         </div>
         
+        <a class="arrow arrow-welcome" href="#songs">
+            <button><i class="fa-solid fa-angles-down"></i></button>
+        </a>
     </div>
 </div>
 {% endblock %}
