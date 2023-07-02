@@ -52,8 +52,9 @@ class Songs:
 
     @staticmethod
     def check_name(name: str) -> str:
-        name_list: str = ' '.join(x.lower() for x in name.split(' '))
-        return name_list
+        if len(name) == 0:
+            raise ValueError('Поле ввода пустое.')
+        return ' '.join(x.lower() for x in name.split(' '))
 
     @staticmethod
     def search_names(hrefs: list) -> list:
