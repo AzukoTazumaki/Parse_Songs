@@ -50,7 +50,7 @@ video {
 }
 
 .arrow-welcome {
-    left: 45.5vw;
+    left: 46.4vw;
     top: 92vh;
 }
 
@@ -59,7 +59,7 @@ video {
 }
 
 .arrow-songs {
-    left: 45.5vw;
+    left: 46.4vw;
     top: 192vh;
 }
 
@@ -297,4 +297,25 @@ li::before {
 
 .artists_cards:last-child {
     margin-bottom: 15vh;
+}
+
+/* ———————————————————————————————————— FOOTER ———————————————————————————————————— */
+
+footer {
+    color: var(--seashell-rgb);
+    border-top: 1px solid var(--seashell-rgb);
+    margin: 0 5%;
+}
+
+.footer_link {
+    text-decoration: none;
+    color: var(--seashell-rgb);
+    transition: .3s;
+}
+
+.footer_link:hover {
+    padding: 5px 25px;
+    background-color: var(--rose-rgb);
+    text-shadow: var(--black-shadow);
+    border-radius: 8px;
 }

@@ -15,8 +15,10 @@
     {% block header %}{% include 'header.html' %}{% endblock %}
     {% block main_content %}{% endblock %}
     {% block search_artists %}{% endblock %}
+    {% block footer %}{% include 'footer.html' %}{% endblock %}
     <script src="{{url_for('static', filename='node_modules/bootstrap/dist/js/bootstrap.bundle.js')}}"></script>
     <script src="{{url_for('static', filename='js/main.js')}}"></script>
     <script src="https://kit.fontawesome.com/fb866d52e1.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -1,0 +1,13 @@
+{% block footer %}
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 px-5 mt-4">
+    <p class="col-md-4 mb-0">© 2023 Azuko, все права принадлежат songtranslate.ru</p>
+    <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <img src="{{url_for('static', filename='images/logo.svg')}}" width="100" alt="AZUKO">
+    </a>
+    <div class="footer_links">
+        <a class="footer_link" href="https://github.com/AzukoTazumaki"><i class="fa-brands fa-github fa-xl"></i></a>
+        <a class="footer_link" href="https://vk.com/azuko_1"><i class="fa-brands fa-vk fa-xl"></i></a>
+        <a class="footer_link" href="https://t.me/azuko_dev"><i class="fa-brands fa-telegram fa-xl"></i></a>
+    </div>
+</footer>
+{% endblock %}
