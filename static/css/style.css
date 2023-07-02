@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'Unbounded';
-    src: url(../fonts/Unbounded-Light.ttf);
+    src: url(../fonts/Jura-VariableFont_wght.ttf);
 }
 
 html::-webkit-scrollbar {
@@ -80,7 +80,7 @@ input::-webkit-search-cancel-button {
     text-decoration: none;
     color: var(--white-rgb);
     text-shadow: var(--black-shadow);
-    margin-right: 20px;
+    margin-right: 10%;
     transition: .3s;
 }
 
@@ -102,6 +102,7 @@ input::-webkit-search-cancel-button {
 
 .navbar-brand {
     padding: 0;
+    margin-left: 10%;
 }
 
 @keyframes opacity {
@@ -185,7 +186,9 @@ hr {
 }
 
 input {
-    width: 68%;
+    width: 60%;
+    margin-right: 2%;
+    margin-left: 2%;
     background-color: var(--seashell-rgb);
     padding: 10px 20px;
     border-radius: 8px;
@@ -195,11 +198,11 @@ input {
 }
 
 .search-button {
-    width: 10%;
+    width: 23%;
     background-color: var(--seashell-rgb);
     color: var(--slate-blue-grey-rgb);
     text-shadow: none;
-    padding: 10px 30px;
+    padding: 10px 0;
     border-radius: 8px;
     border: none;
     transition: .3s;
@@ -215,11 +218,11 @@ input {
 }
 
 .search p {
-    width: 20%;
+    width: 23%;
     color: var(--slate-blue-grey-rgb);
     text-shadow: none;
     background-color: var(--seashell-rgb);
-    padding: 10px 30px;
+    padding: 10px 0;
     margin-right: 2%;
     text-align: center;
     border-radius: 8px;
@@ -243,7 +246,7 @@ li::before {
     list-style-position: inside;
 }
 
-.col-4 ul {
+.col-4 ul, .amount_of_artists    {
     padding: 15px;
     background-color: var(--seashell-rgb);
     color: var(--slate-blue-grey-rgb);
@@ -292,67 +295,6 @@ li::before {
     background-color: var(--slate-blue-grey-rgb-deep);
 }
 
-/* ———————————————————————————————————— TOOLTIP ———————————————————————————————————— */
-
-.custom-tooltip {
-    display: inline-block;
-    position: relative;
-    text-align: left;
-    width: 100%;
+.artists_cards:last-child {
+    margin-bottom: 15vh;
 }
-
-.custom-tooltip .left {
-    min-width: 300px;
-    top: 50%;
-    right: 100%;
-    margin-right: 40px;
-    transform: translate(0, -50%);
-    padding: 10px 20px;
-    color: #FFFFFF;
-    background-color: var(--palegoldenrod);
-    font-weight: normal;
-    font-size: 13px;
-    border-radius: 3px;
-    position: absolute;
-    z-index: 99999999;
-    box-sizing: border-box;
-    box-shadow: 0 1px 8px var(--palegoldenrod);
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.8s;
-}
-
-.custom-tooltip:hover .left {
-    visibility: visible;
-    opacity: 1;
-}
-
-.custom-tooltip .left i {
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    margin-top: -12px;
-    width: 12px;
-    height: 24px;
-    overflow: hidden;
-}
-
-.custom-tooltip .left i::after {
-    content: '';
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    left: 0;
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(-45deg);
-    background-color: var(--palegoldenrod);
-    box-shadow: 0 1px 8px var(--palegoldenrod);
-}
-
-.custom-tooltip div span {
-    color: var(--marsh);
-    font-weight: bold;
-    border: none;
-}
-
-/* ———————————————————————————————————— TOOLTIP ———————————————————————————————————— */

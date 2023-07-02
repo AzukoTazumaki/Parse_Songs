@@ -2,7 +2,7 @@
 
 {% block search_artists %}
 <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center artists_cards">
         <div class="col-8">
             <h3 class="search_artists_title">Найденные результаты по запросу "{{ request_search }}":</h3>
         </div>
@@ -15,6 +15,9 @@
             </div>
         </div>
         {% endfor %}
+        <div class="col-8 p-0 mt-3">
+            <span class="amount_of_artists">Найдено исполнителей: {{ data|length }}</span>
+        </div>
     </div>
 </div>
 {% endblock %}
