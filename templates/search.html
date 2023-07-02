@@ -1,48 +1,32 @@
 {% block search %}
-<div data-bs-target="#welcome_container" class="container-fluid" >
+<div data-bs-target="#welcome_container" class="container-fluid">
     <div id="songs" class="row d-flex align-items-center vh-100">
-        
-
         <div class="offset-1 col-10 search-songs d-flex align-items-center">
             <div class="row">
                 <div class="offset-2 col-8 mb-5">
-                    <div class="d-flex justify-content-between align-items-center search">
-                        <p class="m-0">Найти песню</p>
-                        <input type="search" name="search" id="search">
-                        <button class="search-button"><i class="fa-solid fa-magnifying-glass fa-xl"></i></button>
-                    </div>
+                    <form action="/search" method="get">
+                        <div class="d-flex justify-content-between align-items-center search">
+                            <p class="m-0">Найти песню</p>
+                            <input type="search" name="search" id="search">
+                            <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass fa-xl"></i></button>
+                        </div>
+                    </form>
                 </div>
                 <div class="col-4">
                     <p class="title-list">Популярные переводы:</p>
-                    <ul>
-                        {% for song in popular_songs %}
-                            <li>{{ song }}</li>
-                        {% endfor %}
-                    </ul>
+                    <ul>{% for song in popular_songs %}<li>{{ song }}</li>{% endfor %}</ul>
                 </div>
                 <div class="col-4">
                     <p class="title-list">Новые переводы:</p>
-                    <ul>
-                        {% for song in new_songs %}
-                            <li>{{ song }}</li>
-                        {% endfor %}
-                    </ul>
+                    <ul>{% for song in new_songs %}<li>{{ song }}</li>{% endfor %}</ul>
                 </div>
                 <div class="col-4">
                     <p class="title-list">Топ-15 переводов:</p>
-                    <ul>
-                        {% for song in top_songs %}
-                            <li>{{ song }}</li>
-                        {% endfor %}
-                    </ul>
+                    <ul>{% for song in top_songs %}<li>{{ song }}</li>{% endfor %}</ul>
                 </div>
             </div>
         </div>
-
-
-        <a class="arrow arrow-songs" href="#welcome_container">
-            <button><i class="fa-solid fa-angles-up"></i></button>
-        </a>
+        <a class="arrow arrow-songs" href="#welcome_container"><button><i class="fa-solid fa-angles-up"></i></button></a>
     </div>
 </div>
 {% endblock %}

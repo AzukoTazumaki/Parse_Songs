@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,43 +9,14 @@
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
     <link rel="shortcut icon" href="{{url_for('static', filename='favicon.ico')}}" type="image/x-icon">
 </head>
-
 <body data-bs-spy="scroll" data-bs-smooth-scroll="true">
-
     <video autoplay muted loop src="{{url_for('static', filename='video/bg.mp4')}}"></video>
-
-    {% block preloader %}
-    {% include 'preloader.html' %}
-    {% endblock %}
-
-    {% block header %}
-    {% include 'header.html' %}
-    {% endblock %}
-
-    {% block welcome %}
-    {% include 'welcome.html' %}
-    {% endblock %}
-
-    {% block search %}
-    {% include 'search.html' %}
-    {% endblock %}
-
-    <!-- ——SCRIPTS—— -->
-
-        <!-- BOOTSTRAP -->
-    <script 
-        src="{{url_for('static', filename='node_modules/bootstrap/dist/js/bootstrap.bundle.js')}}">
-    </script>
-
-    <script 
-        src="{{url_for('static', filename='js/main.js')}}">
-    </script>
-
-        <!-- ICONS -->
-    <script 
-        src="https://kit.fontawesome.com/fb866d52e1.js" crossorigin="anonymous">
-    </script>
-
+    {% block preloader %}{% include 'preloader.html' %}{% endblock %}
+    {% block header %}{% include 'header.html' %}{% endblock %}
+    {% block main_content %}{% endblock %}
+    {% block search_artists %}{% endblock %}
+    <script src="{{url_for('static', filename='node_modules/bootstrap/dist/js/bootstrap.bundle.js')}}"></script>
+    <script src="{{url_for('static', filename='js/main.js')}}"></script>
+    <script src="https://kit.fontawesome.com/fb866d52e1.js" crossorigin="anonymous"></script>
 </body>
-
 </html>

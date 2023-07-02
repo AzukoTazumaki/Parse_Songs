@@ -28,7 +28,7 @@ video {
 
 .arrow {
     position: absolute;
-    background-color: var(--rose-rgba);
+    background-color: var(--slate-blue-grey-rgba);
     text-shadow: var(--black-shadow);
     padding: 10px 50px;
     border-radius: 8px;
@@ -38,8 +38,8 @@ video {
 }
 
 .arrow:hover {
-    box-shadow: 2px 2px 5px var(--pink-rgb);
-    background-color: var(--rose-rgb);
+    box-shadow: 2px 2px 5px var(--light-purple-blue-rgb);
+    background-color: var(--slate-blue-grey-rgb);
     transform: scale(1.05);
 }
 
@@ -69,7 +69,9 @@ input::-webkit-search-cancel-button {
     width: 1em;
     cursor: pointer;
     content: url(../images/trash-can-solid.svg);
-    color: var(--pink-daisy-rgb);
+    background-color: var(--slate-blue-grey-rgb);
+    padding: 5px;
+    border-radius: 3px;
 }
 
 /* ————————————————————————————————————————————————— BLOCK HEADER ————————————————————————————————————————————————— */
@@ -174,10 +176,10 @@ hr {
 
 .search-songs {
     height: 70vh;
-    border: 2px solid var(--pink-rgb);
+    border: 2px solid var(--light-purple-blue-rgb);
     border-radius: 10px;
-    box-shadow: 3px 3px 10px var(--rose-rgba);
-    background-color: var(--rose-gold-rgba);
+    box-shadow: 3px 3px 10px var(--light-purple-blue-rgba);
+    background-color: var(--slate-blue-grey-rgba);
     padding: 30px;
     text-shadow: var(--black-shadow);
 }
@@ -188,15 +190,14 @@ input {
     padding: 10px 20px;
     border-radius: 8px;
     outline: none;
-    color: var(--white-rgb);
-    text-shadow: var(--black-shadow);
+    color: var(--slate-blue-grey-rgb);
     border: none;
 }
 
 .search-button {
     width: 10%;
     background-color: var(--seashell-rgb);
-    color: var(--pink-daisy-rgb);
+    color: var(--slate-blue-grey-rgb);
     text-shadow: none;
     padding: 10px 30px;
     border-radius: 8px;
@@ -215,7 +216,7 @@ input {
 
 .search p {
     width: 20%;
-    color: var(--pink-daisy-rgb);
+    color: var(--slate-blue-grey-rgb);
     text-shadow: none;
     background-color: var(--seashell-rgb);
     padding: 10px 30px;
@@ -229,7 +230,7 @@ li::before {
 }
 
 .title-list {
-    color: var(--pink-daisy-rgb);
+    color: var(--slate-blue-grey-rgb);
     text-shadow: none;
     padding: 5px 15px;
     background-color: var(--seashell-rgb);
@@ -245,7 +246,7 @@ li::before {
 .col-4 ul {
     padding: 15px;
     background-color: var(--seashell-rgb);
-    color: var(--pink-daisy-rgb);
+    color: var(--slate-blue-grey-rgb);
     text-shadow: none;
     border-radius: 8px;
     transition: .3s;
@@ -253,7 +254,42 @@ li::before {
 
 .col-4 ul:hover {
     transform: scale(1.02);
-    box-shadow: 3px 3px 10px var(--raspberry-purple-rgba);
+    box-shadow: 3px 3px 10px var(--pink-rgb);
+}
+
+.search_artists_title {
+    margin-top: 35vh;
+    background-color: var(--seashell-rgb);
+    color: var(--slate-blue-grey-rgb);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.artist_card {
+    background-color: var(--seashell-rgb);
+    color: var(--slate-blue-grey-rgb);
+    padding: 20px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.artist_card:hover {
+    transform: scale(1.02);
+    box-shadow: 3px 3px 10px var(--pink-rgb);
+}
+
+.find-button {
+    background-color: var(--slate-blue-grey-rgb);
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    color: var(--seashell-rgb);
+    transition: .3s;
+}
+
+.find-button:hover {
+    background-color: var(--slate-blue-grey-rgb-deep);
 }
 
 /* ———————————————————————————————————— TOOLTIP ———————————————————————————————————— */
