@@ -183,7 +183,7 @@ hr {
 }
 
 input {
-    width: 68%;
+    width: 63%;
     background-color: var(--seashell-rgb);
     padding: 10px 20px;
     border-radius: 8px;
@@ -214,11 +214,11 @@ input {
 }
 
 .search p {
-    width: 20%;
+    width: 25%;
     color: var(--pink-daisy-rgb);
     text-shadow: none;
     background-color: var(--seashell-rgb);
-    padding: 10px 30px;
+    padding: 10px 20px;
     margin-right: 2%;
     text-align: center;
     border-radius: 8px;
@@ -320,3 +320,9 @@ li::before {
 }
 
 /* ———————————————————————————————————— TOOLTIP ———————————————————————————————————— */
+
+@media screen and (max-width: 1500px) {
+    body {
+        font-size: 13px;
+    }
+}
