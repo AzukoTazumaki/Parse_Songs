@@ -21,5 +21,16 @@ def search():
     return index()
 
 
+@project.route('/songs', methods=['POST', 'GET'])
+def songs():
+    if request.method == 'POST':
+        form_data = request.form['artist']
+        list_data = Songs(form_data).search_songs()
+        if len(list_data) == 2:
+            return render_template('search_songs.html', img=list_data[0], songs=list_data[1], request_search=form_data)
+        return render_template('search_songs.html', img='', songs=list_data, request_search=form_data)
+    return index()
+
+
 if __name__ == '__main__':
     project.run(debug=True)

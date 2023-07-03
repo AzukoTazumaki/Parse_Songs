@@ -246,7 +246,7 @@ li::before {
     list-style-position: inside;
 }
 
-.col-4 ul, .amount_of_artists    {
+.col-4 ul, .amount_of_artists, .amount_of_songs {
     padding: 15px;
     background-color: var(--seashell-rgb);
     color: var(--slate-blue-grey-rgb);
@@ -260,8 +260,8 @@ li::before {
     box-shadow: 3px 3px 10px var(--pink-rgb);
 }
 
-.search_artists_title {
-    margin-top: 35vh;
+.search_artists_title, .search_songs_title {
+    margin-top: 25vh;
     background-color: var(--seashell-rgb);
     color: var(--slate-blue-grey-rgb);
     padding: 20px;
@@ -269,7 +269,7 @@ li::before {
     text-align: center;
 }
 
-.artist_card {
+.artist_card, .song_card {
     background-color: var(--seashell-rgb);
     color: var(--slate-blue-grey-rgb);
     padding: 20px;
@@ -277,14 +277,14 @@ li::before {
     transition: .3s;
 }
 
-.artist_card:hover {
+.artist_card:hover, .song_card:hover {
     transform: scale(1.02);
     box-shadow: 3px 3px 10px var(--pink-rgb);
 }
 
 .find-button {
     background-color: var(--slate-blue-grey-rgb);
-    padding: 10px 20px;
+    padding: 7px 30px;
     border-radius: 8px;
     border: none;
     color: var(--seashell-rgb);
@@ -295,7 +295,8 @@ li::before {
     background-color: var(--slate-blue-grey-rgb-deep);
 }
 
-.artists_cards:last-child {
+.artists_cards:last-child,
+.songs_cards:last-child {
     margin-bottom: 15vh;
 }
 
@@ -318,4 +319,11 @@ footer {
     background-color: var(--rose-rgb);
     text-shadow: var(--black-shadow);
     border-radius: 8px;
+}
+
+
+
+iframe {
+    border-radius: 10px;
+    width: 50%;
 }

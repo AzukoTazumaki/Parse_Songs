@@ -11,7 +11,10 @@
             <p>{{ artist }}</p>
             <p>{{ bio }}</p>
             <div class="d-flex justify-content-end">
-                <button class="find-button" type="submit">Перейти</button>
+                <form action="/songs" method="post">
+                    <input name="artist" class="d-none" type="text" value="{{ artist }}">
+                    <button class="find-button" type="submit">Перейти</button>
+                </form>
             </div>
         </div>
         {% endfor %}
