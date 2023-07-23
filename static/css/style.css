@@ -18,6 +18,7 @@ html::-webkit-scrollbar {
 body {
     background-color: var(--rose-rgb);
     font-family: 'Unbounded';
+    font-weight: bold !important;
 }
 
 video {
